@@ -32,7 +32,7 @@ body {
 min-height: 100dvh;
 font-family: ‘Cormorant Garamond’, Georgia, serif;
 background: #110a04;
-color: var(–ink);
+color: var(--ink);
 overflow-x: hidden;
 position: relative;
 }
@@ -61,7 +61,7 @@ animation: float-up linear infinite;
 0%   { transform: translateY(100vh) translateX(0) scale(1); opacity: 0; }
 10%  { opacity: 1; }
 90%  { opacity: 0.6; }
-100% { transform: translateY(-10vh) translateX(var(–dx)) scale(0.3); opacity: 0; }
+100% { transform: translateY(-10vh) translateX(var(--dx)) scale(0.3); opacity: 0; }
 }
 
 /* ─── SCENE ─── */
@@ -174,14 +174,14 @@ font-style: italic;
 font-size: clamp(0.6rem, 2vw, 0.85rem);
 letter-spacing: 0.35em;
 text-transform: uppercase;
-color: var(–ink-mid);
+color: var(--ink-mid);
 opacity: 0.65;
 margin-bottom: 4px;
 }
 .env-name .name {
 font-family: ‘Pinyon Script’, cursive;
 font-size: clamp(2.6rem, 8vw, 4.2rem);
-color: var(–ink);
+color: var(--ink);
 line-height: 1;
 text-shadow: 0 1px 3px rgba(0,0,0,0.12);
 }
@@ -240,7 +240,7 @@ max-width: 420px;
 max-height: calc(100dvh - 32px);
 overflow-y: auto;
 overscroll-behavior: contain;
-background: var(–paper);
+background: var(--paper);
 padding: clamp(28px, 6vw, 48px) clamp(24px, 5vw, 40px);
 border-radius: 2px;
 box-shadow:
@@ -274,20 +274,20 @@ border-radius: 50%;
 background: rgba(80,50,10,0.18);
 transition: background 0.3s ease, transform 0.3s ease;
 }
-.step-pip span.active { background: var(–wax); transform: scale(1.25); }
+.step-pip span.active { background: var(--wax); transform: scale(1.25); }
 
 .gate-title {
 font-family: ‘Cormorant Garamond’, serif;
 font-weight: 300;
 font-size: clamp(1.5rem, 5vw, 2rem);
-color: var(–ink);
+color: var(--ink);
 text-align: center;
 margin-bottom: 8px;
 line-height: 1.2;
 }
 .gate-sub {
 font-style: italic;
-color: var(–ink-soft);
+color: var(--ink-soft);
 font-size: clamp(0.9rem, 2.8vw, 1.05rem);
 text-align: center;
 margin-bottom: 28px;
@@ -304,7 +304,7 @@ border: none;
 border-bottom: 1.5px solid rgba(80,50,10,0.35);
 font-family: ‘Caveat’, cursive;
 font-size: clamp(1.5rem, 5vw, 1.85rem);
-color: var(–ink);
+color: var(--ink);
 text-align: center;
 padding: 8px 4px 6px;
 outline: none;
@@ -313,13 +313,13 @@ transition: border-color 0.3s;
 border-radius: 0;
 }
 .field input::placeholder { color: rgba(80,50,10,0.28); font-size: 1rem; }
-.field input:focus { border-color: var(–wax); }
+.field input:focus { border-color: var(--wax); }
 
 .hint-text {
 text-align: center;
 font-style: italic;
 font-size: 0.82rem;
-color: var(–ink-soft);
+color: var(--ink-soft);
 opacity: 0.5;
 margin-top: 7px;
 }
@@ -330,7 +330,7 @@ text-align: center;
 font-style: italic;
 font-size: 0.92rem;
 margin: 10px 0 2px;
-color: var(–wax);
+color: var(--wax);
 opacity: 0;
 transition: opacity 0.3s ease;
 }
@@ -358,13 +358,13 @@ cursor: pointer;
 transition: background 0.25s, color 0.25s, transform 0.12s;
 -webkit-tap-highlight-color: transparent;
 touch-action: manipulation;
-color: var(–ink);
+color: var(--ink);
 min-height: 44px;
 }
-.btn:hover  { background: var(–ink); color: var(–paper); }
+.btn:hover  { background: var(--ink); color: var(--paper); }
 .btn:active { transform: scale(0.96); }
 .btn.secondary {
-color: var(–ink-soft);
+color: var(--ink-soft);
 border-color: rgba(80,50,10,0.35);
 font-size: 0.85rem;
 padding: 9px 22px;
@@ -416,7 +416,7 @@ cursor: pointer;
 touch-action: manipulation;
 -webkit-tap-highlight-color: transparent;
 overflow: hidden;
-background: radial-gradient(circle at 38% 32%, var(–wax-hi) 0%, var(–wax) 40%, var(–wax-lo) 100%);
+background: radial-gradient(circle at 38% 32%, var(--wax-hi) 0%, var(--wax) 40%, var(--wax-lo) 100%);
 box-shadow:
 0 0 0 3px rgba(140,20,20,0.3),
 0 8px 24px rgba(0,0,0,0.4),
@@ -456,7 +456,7 @@ pointer-events: none;
 }
 .melt-note {
 font-style: italic;
-color: var(–ink-soft);
+color: var(--ink-soft);
 font-size: clamp(0.82rem, 2.2vw, 0.95rem);
 opacity: 0.65;
 text-align: center;
@@ -486,7 +486,7 @@ margin: auto;
 background:
 radial-gradient(ellipse 80% 40% at 20% 10%, rgba(120,80,30,0.07) 0%, transparent 60%),
 radial-gradient(ellipse 60% 50% at 80% 90%, rgba(120,80,30,0.07) 0%, transparent 60%),
-var(–paper);
+var(--paper);
 padding: clamp(32px, 8vw, 68px) clamp(24px, 7vw, 60px) clamp(32px, 8vw, 60px);
 box-shadow:
 0 0 0 1px rgba(80,50,10,0.2),
@@ -511,7 +511,7 @@ position: absolute;
 top: 0; left: 50%;
 transform: translateX(-50%);
 width: 60px; height: 6px;
-background: linear-gradient(90deg, var(–wax-lo), var(–wax), var(–wax-lo));
+background: linear-gradient(90deg, var(--wax-lo), var(--wax), var(--wax-lo));
 box-shadow: 0 2px 8px rgba(120,10,10,0.4);
 }
 
@@ -524,7 +524,7 @@ pointer-events: none;
 .letter-date {
 font-style: italic;
 font-size: clamp(0.8rem, 2vw, 0.95rem);
-color: var(–ink-soft);
+color: var(--ink-soft);
 text-align: right;
 opacity: 0.65;
 margin-bottom: 28px;
@@ -533,7 +533,7 @@ margin-bottom: 28px;
 .greeting {
 font-family: ‘Pinyon Script’, cursive;
 font-size: clamp(2.4rem, 7vw, 3.8rem);
-color: var(–ink);
+color: var(--ink);
 margin-bottom: 24px;
 line-height: 1;
 }
@@ -542,7 +542,7 @@ line-height: 1;
 font-family: ‘Caveat’, cursive;
 font-size: clamp(1.15rem, 3.2vw, 1.45rem);
 line-height: 1.72;
-color: var(–ink);
+color: var(--ink);
 }
 .body-text p {
 margin-bottom: 1em;
@@ -564,7 +564,7 @@ margin-top: 28px;
 font-family: ‘Cormorant Garamond’, serif;
 font-style: italic;
 font-size: clamp(1rem, 2.5vw, 1.15rem);
-color: var(–ink-soft);
+color: var(--ink-soft);
 opacity: 0;
 animation: line-in 0.7s ease forwards;
 }
@@ -573,7 +573,7 @@ animation: line-in 0.7s ease forwards;
 .signature {
 font-family: ‘Pinyon Script’, cursive;
 font-size: clamp(2rem, 6vw, 3rem);
-color: var(–ink);
+color: var(--ink);
 margin-top: 6px;
 line-height: 1;
 }
